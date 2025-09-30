@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 5</title>
+    <style>
+        body{
+            background-color:#FCF191;
+            font-size: 10pt;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            border: 3px dashed black;
+            padding: 20px;
+        }
+
+        header{
+            text-align: center;
+        }
+
+        header h1{
+            color: #ff3300; 
+            font-size: 28px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            text-shadow: 2px 2px 6px #282422; 
+            margin-top: 0px;
+        }
+
+        header p {
+            font-size: 11pt;
+        }
+
+        .middle {
+            margin: 20px auto;
+            max-width: 700px;
+            background-color: #ffcc66;
+            padding: 15px;
+        }
+
+        .middle h3 {
+            text-transform: uppercase;
+            color: #cc3300;
+            font-weight: bold;
+            font-size: 10pt;
+            margin-top: 0;
+            letter-spacing: 3px;
+        }
+
+        .middle p {
+            color: black;
+            font-size: 9pt;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        /* === Sidebar kiri (dibagi 2 kotak) === */
+        .sidebar {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu, .sidebar-ads {
+            border: 1px solid #d3a600;
+            background: white;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: #000080;
+            font-size: 9pt;
+            text-decoration: underline dotted;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .sidebar-ads {
+            text-align: center;
+            font-weight: bold;
+            font-size: 14pt;
+            color: #7b0000;
+            text-shadow: 1px 1px 5px #ff9999;
+            padding: 100px 10px;
+        }
+
+        /* === Content tengah === */
+        .content {
+            width: 60%; 
+            border: 1px solid #d3a600;
+            background: white;
+            padding: 10px;
+            margin-right: 10px;
+        }    
+
+        .content h3 {
+            color: #880e4f;
+            font-weight: bold;
+            padding: 2px 5px;
+            border-top: 2px solid #880e4f;  
+            border-left: 2px solid #880e4f;  
+            margin: 20px 0 10px;    
+        }    
+
+        .content p i {
+            color: #cc3300;
+        }
+
+        .content a {
+            display: block;
+            margin-top: 5px;
+            font-size: 9pt;
+            color: #000080;
+            text-decoration: underline dotted;
+        }
+
+        /* === Sidebar kanan (iklan) === */
+        .ads {
+            width: 20%;
+            border: 1px solid #d3a600;
+            background: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14pt;
+            color: #7b0000;
+            text-shadow: 1px 1px 5px #ff9999;
+            padding: 40px 10px;
+            display: flex;              
+            justify-content: center;    
+            align-items: center;       
+        }
+        
+
+        footer {
+            text-align: center;
+            font-size: 9pt;
+            color: #444;
+            padding-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <Header>
+        <h1>JenWare... Make It Personal</h1>
+        <p>Special occasions call for special gifts. The Jenware line of housewares and clothing can be personalized for the ones you love... the happy couple celebrating their new life together... the recent graduate... or a new baby</p>
+    </Header>
+
+    <div class="middle">
+        <h3>TESTIMONIALS</h3>
+        <p>"The JenWARE onesies were the hit of the baby shower. The custom letter "a" and handmade quality made this gift really stand out among the cookie-cutter clothes from the department store."</p>
+        <p>"Thanks for the cool JenWARE barware. I couldn't wait until I found "Mr. Right," so I just bought a set for myself! My friends always want to know where I got them so I send them to your site."</p>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar kiri dengan 2 kotak -->
+        <div class="sidebar">
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">About Us</a>
+            </div>
+            <div class="sidebar-ads">
+                SPACE IKLAN
+            </div>
+        </div>
+        
+        <!-- Konten utama -->
+        <div class="content">
+            <h3>GlassWARE</h3>
+            <p><i>The perfect wedding gift.</i> Our highest quality glassware is sandblasted by hand with the character of your choice. Choose from 26 letters and 24 typefaces. Custom designs are also available for an additional design charge. Allow 4 to 6 weeks for delivery.</p>
+            <a href="#">Go to the GlassWARE page</a>
+
+            <h3>BabyWARE</h3>
+            <p><i>Tired of sickly-sweet?</i> These onesies with oversized letters in bold, bright patterns are a welcome change from the usual pastel fare. Monogrammed pants and baby shoes are also available. Tell us the initial and mix and match from 6 fun fabric patterns and 8 edging colors. Allow 2 to 4 weeks for delivery. Sizes: 3mos, 6mos, and 12mos.</p>
+            <a href="#">Go to the BabyWARE page</a>
+        </div>
+
+        <!-- Sidebar kanan -->
+        <div class="ads">
+            SPACE IKLAN
+        </div>
+    </div>
+
+    <footer>
+        All content copyright © Jenware, Inc.
+    </footer>
+</body>
+</html>
